@@ -6,6 +6,7 @@ import Image from 'next/image'
 import React from 'react'
 import MenuItem from './MenuItem';
 import useLoginModal from '@/app/hooks/useLoginModal';
+import { useRouter } from 'next/navigation';
 
 interface AvatarProps {
   currentUser?: SafeUser | null;
@@ -16,6 +17,7 @@ interface AvatarProps {
 
 const Avatar:React.FC<AvatarProps> = ({imageSrc, currentUser, onToggle, isOpen}) => {
   const loginModal = useLoginModal()
+  const router = useRouter();
   return (
     <div className='w-10 h-10 rounded-full flex items-center cursor-pointer relative' onClick={onToggle}>
       {
@@ -30,10 +32,18 @@ const Avatar:React.FC<AvatarProps> = ({imageSrc, currentUser, onToggle, isOpen})
           <div className='md:hidden absolute top-6 right-4 bg-primary cursor-pointer shadow-md'>
             {
               currentUser ?  
-             <MenuItem 
-              label="Logout" 
-              onClick={() => signOut()}
+              <div className='flex flex-col gap-4'>
+
+              <MenuItem 
+                label="Logout" 
+                onClick={() => signOut()}
+              />
+              <MenuItem 
+              label="My Rentals" 
+              onClick={() => router.push('/rentals')}
             />
+              </div>
+
             :
             <MenuItem 
               label="Login" 

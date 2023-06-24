@@ -17,6 +17,8 @@ const navigationItems = [
   { link: '/cars', name: 'My Cars',  },
   { link: '/bookmarks', name: 'My Bookmarks',  },
   { link: '/rents', name: 'My Rents',  },
+  { link: '/rentals', name: 'Rentals' },
+
 
 ];
 
