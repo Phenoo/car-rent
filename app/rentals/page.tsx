@@ -16,6 +16,15 @@ const RentPage = async () => {
   const rents = await getRents({
     userId: currentUser.id})
 
+    if(rents.length === 0 || !rents){
+      <Container>
+        <Header
+            title='Rented Cars'
+            subtitle='Cars you have rented so far'
+        />
+        <NothingFound />
+      </Container>
+    }
 
   return (
     <Container>

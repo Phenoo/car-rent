@@ -64,7 +64,7 @@ const SearchModal = () => {
 
 
    let bodyContent = (
-      <div className='flex flex-col gap-12'>
+      <div className='flex flex-col gap-8'>
         <div>
           <label className='text-xl font-semibold mt-4'>Price <span></span></label>
           <input

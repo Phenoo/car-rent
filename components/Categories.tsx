@@ -27,7 +27,7 @@ import audi from '@/components/images/audi.png'
 
 import CategoryBox from './CategoryBox'
 
-export const cars = [
+export const sortedCars = [
   {
     name: "Audi",
     description: 'Audi is a luxury automobile manufacturer known for its performance and elegant design.',
@@ -121,6 +121,7 @@ export const cars = [
   ];
   
   
+  export const cars = sortedCars.sort((a, b) => a.name.localeCompare(b.name));
 
 const Categories = () => {
     const searchParams  = useSearchParams();
