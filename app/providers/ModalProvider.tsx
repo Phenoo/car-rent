@@ -11,7 +11,17 @@ import { Toaster } from 'react-hot-toast'
 const ModalProvider = () => {
   return (
     <>
-      <Toaster />
+      <Toaster
+       toastOptions={{
+        className: '',
+        style: {
+            background: 'black',
+            color: 'white',
+            padding: '16px',
+            width: '250px'
+          },
+        }}
+        />
         <LoginModal />
         <RegisterModal />
         <RentModal />

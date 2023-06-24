@@ -1,5 +1,4 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 
 import Navigation from '@/components/Navbar/Navigation'
 import ModalProvider from './providers/ModalProvider'

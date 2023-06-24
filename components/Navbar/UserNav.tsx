@@ -13,6 +13,7 @@ import useRegisterModal from '@/app/hooks/useRegisterModal'
 import useLoginModal from '@/app/hooks/useLoginModal'
 import { SafeUser } from '@/app/types'
 import useRentModal from '@/app/hooks/useRentModal'
+import { toast } from 'react-hot-toast'
 
 interface UserNavProps {
   currentUser: SafeUser | null
@@ -38,6 +39,7 @@ const UserNav: React.FC<UserNavProps> = ({currentUser}) => {
 
 
 
+
   return (
     <div className='flex items-center gap-2 relative'> 
       <button className='hidden md:flex py-2 px-4 rounded-3xl text-sm bg-orange text-white hover:opacity-75 transition animate-pulse'
@@ -45,6 +47,7 @@ const UserNav: React.FC<UserNavProps> = ({currentUser}) => {
       >
         Rent your car
       </button>
+
       <div className='md:p-2 flex flex-row items-center gap-3 rounded-full border cursor-pointer'>
         <button onClick={onToggle} className='hidden md:flex'>
           <VscMenu  /> 
