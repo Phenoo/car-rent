@@ -7,7 +7,6 @@ import getCurrentUser from './actions/getCurrentUser'
 import MobileNav from '@/components/Navbar/MobileNav'
 import RentButton from '@/components/RentButton'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Desco Car Rentals',
@@ -22,7 +21,7 @@ export default async function RootLayout({
   const currentUser = await getCurrentUser();
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
           <ModalProvider />
           <Navigation currentUser={currentUser} />
           {children}

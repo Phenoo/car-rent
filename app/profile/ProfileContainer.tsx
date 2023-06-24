@@ -8,6 +8,8 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import Link from 'next/link'
 import { BsArrowUpRightCircleFill } from 'react-icons/bs'
+import { VscVerifiedFilled } from 'react-icons/vsc'
+
 
 interface ProfileContainerPRops {
     currentUser?: SafeUser | null
@@ -48,7 +50,7 @@ const ProfileContainer:React.FC<ProfileContainerPRops> = ({currentUser}) => {
 
         </div>
         <div>
-          <div className='text-xl md:text-2xl'>{currentUser.name}</div>
+          <div className='text-xl md:text-2xl flex gap-4 items-center'>{currentUser.name} <VscVerifiedFilled /> </div>
           <div className='text-xs md:text-sm text-accent-4'>{currentUser.email}</div>
         </div>
       </div>

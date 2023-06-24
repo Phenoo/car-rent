@@ -18,7 +18,7 @@ const RentButton:React.FC<RentButtonProps> = ({currentUser}) => {
 
     const onRent = useCallback(() => {
         if(!currentUser){
-            loginModal.onOpen();
+           return loginModal.onOpen();
         }
 
         rentModal.onOpen();

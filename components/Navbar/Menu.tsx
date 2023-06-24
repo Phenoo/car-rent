@@ -43,13 +43,14 @@ const Menu = () => {
   const handleClick = () => {
     searchModal.onOpen()
   }
+  
   return (
     <div className='w-full md:w-fit shadow-sm border rounded-3xl hover:shadow-lg transition p-4 flex gap-4 items-center justify-between cursor-pointer' onClick={handleClick}>
       <div className='flex justify-between gap-4'>
         <div className='md:hidden text-sm'>Search</div>
-        <div className='hidden md:block px-2 md:px-6 text-xs md:text-base'>{brandLabel}</div>
-        <div className='hidden md:block  px-2 md:px-6 text-xs md:text-base'>{yearLabel}</div>
-        <div className='hidden md:block px-2 md:px-6 text-xs md:text-base'>{priceLabel}</div>
+        <div className='hidden md:block px-2 md:px-6 text-xs md:text-sm'>{brandLabel}</div>
+        <div className='hidden md:block  px-2 md:px-6 text-xs md:text-sm'>{yearLabel}</div>
+        <div className='hidden md:block px-2 md:px-6 text-xs md:text-sm'>{priceLabel}</div>
       </div>
       <div className='pr-4 cursor-pointer' onClick={handleClick}>
         <ImEqualizer color='orange' size={20} />

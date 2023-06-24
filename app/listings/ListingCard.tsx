@@ -75,7 +75,6 @@ const ListingCard:React.FC<ListingCardProps> = ({
         }, [disabled, handleDelete, actionId])
 
     const { id, title, imageSrc, brand, seatCount, windowCount, maxSpeed, available, price, year } = data;
-    console.log(typeof actionId)
 
   return (
     <div className='flex flex-col gap-4 rounded-md shadow-md bg-white'>
@@ -113,7 +112,7 @@ const ListingCard:React.FC<ListingCardProps> = ({
                 </div>
 
                 <div className='flex flex-row justify-between'>
-                    <div className='text-lg font-semibold'>
+                    <div className='text-base font-semibold'>
                         {title}
                     </div>
                         <Bookmark

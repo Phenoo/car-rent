@@ -32,7 +32,7 @@ const Avatar:React.FC<AvatarProps> = ({imageSrc, currentUser, onToggle, isOpen})
           <div className='md:hidden absolute top-6 right-4 bg-primary cursor-pointer shadow-md'>
             {
               currentUser ?  
-              <div className='flex flex-col gap-4'>
+              <div className='flex flex-col gap-4 w-20'>
 
               <MenuItem 
                 label="Logout" 

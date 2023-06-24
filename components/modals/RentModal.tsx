@@ -133,7 +133,7 @@ const RentModal = () => {
                   grid 
                   grid-cols-2
                   gap-3
-                  max-h-[60vh]
+                  max-h-[55vh]
                   overflow-y-auto
                 '>
                     {
@@ -232,7 +232,7 @@ const RentModal = () => {
                 title='Now set your price'
                 subtitle='How much could charge per day?'
             />
-            <div className='mt-4 flex flex-col gap-4'>
+            <div className='mt-4 flex flex-col gap-8'>
                 <Input
                     id='price'
                     type='number'

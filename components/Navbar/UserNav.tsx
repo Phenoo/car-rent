@@ -86,6 +86,10 @@ const UserNav: React.FC<UserNavProps> = ({currentUser}) => {
                   onClick={() => router.push('/rents')}
                 />
                 <MenuItem 
+                  label="My Rents" 
+                  onClick={() => router.push('/rentals')}
+                />
+                <MenuItem 
                   label="My Cars" 
                   onClick={() => router.push('/cars')}
                 />

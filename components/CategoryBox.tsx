@@ -50,7 +50,7 @@ const CategoryBox:React.FC<CategoryBoxProps> = ({label, logo, selected}) => {
         <div className='w-[30px] h-[30px]'>
             <Image src={logo} alt={label} width={30} height={30} className='object-contain' />
         </div>
-        <div className='text-sm'>
+        <div className='text-xs'>
             {label}
         </div>
     </div>

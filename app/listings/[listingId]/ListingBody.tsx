@@ -23,10 +23,10 @@ const ListingBody: React.FC<ListingBodyProps> = (
 ) => {
   return (
     <div>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-12'>
             <div>
                 <div className='relative aspect-square h-[400px] w-full '>
-                    <Image src={listing.imageSrc} alt='listing' fill className='object-contain rounded-md' />
+                    <Image src={listing.imageSrc} alt='listing' fill className='object-contain rounded-lg' />
                 </div>
 
                 <div className='flex justify-between items-center my-4 md:mx-8'>
@@ -51,7 +51,7 @@ const ListingBody: React.FC<ListingBodyProps> = (
                 <div className=' mb-2'>
                     {brandCat.description}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 mt-4">Features</h3>
+                <h3 className="text-lg font-semibold mb-2 mt-4">Features</h3>
                 <div className='flex flex-row justify-between gap-3 pb-4 my-4'>
                     <div className='flex flex-col items-center gap-2 text-[#6b6b6b]'>
                         <GiCarDoor />

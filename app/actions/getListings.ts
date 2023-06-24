@@ -5,6 +5,7 @@ export interface IListingsParams {
     brand?: string;
     price?: number;
     year?: string;
+    company?: string;
 }
 
 export default async function getListings(
