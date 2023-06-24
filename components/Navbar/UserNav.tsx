@@ -40,7 +40,7 @@ const UserNav: React.FC<UserNavProps> = ({currentUser}) => {
 
   return (
     <div className='flex items-center gap-2 relative'> 
-      <button className='hidden md:flex py-2 px-4 rounded-3xl text-sm bg-orange text-white hover:opacity-75 transition'
+      <button className='hidden md:flex py-2 px-4 rounded-3xl text-sm bg-orange text-white hover:opacity-75 transition animate-pulse'
         onClick={onRent}
       >
         Rent your car

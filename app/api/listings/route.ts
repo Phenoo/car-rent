@@ -50,7 +50,7 @@ export async function POST(
       }
     });
 
-    if(!brand && !imageSrc){
+    if(!brand || !imageSrc){
       return NextResponse.error();
     }
   

@@ -23,10 +23,16 @@ import tesla from '@/components/images/tesla-logo.png'
 import toyota from '@/components/images/toyota-logo.png'
 import volkswagen from '@/components/images/volkswagen-logo.png'
 import honda from '@/components/images/honda.png'
+import audi from '@/components/images/audi.png'
 
 import CategoryBox from './CategoryBox'
 
 export const cars = [
+  {
+    name: "Audi",
+    description: 'Audi is a luxury automobile manufacturer known for its performance and elegant design.',
+    logo: audi
+  },
     {
       name: 'Mercedes',
       description: 'Mercedes is a luxury automobile manufacturer known for its performance and elegant design.',

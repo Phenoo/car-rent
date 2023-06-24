@@ -24,6 +24,7 @@ const RentButton:React.FC<RentButtonProps> = ({currentUser}) => {
         rentModal.onOpen();
 
     }, [currentUser, loginModal, rentModal]);
+    
 
     if (pathname === '/' || pathname === '/cars' || pathname === '/bookmarks' || pathname === '/rents'){
         return (

@@ -49,7 +49,7 @@ const ListingBody: React.FC<ListingBodyProps> = (
             <div>
                 <h3 className="text-2xl font-bold">Description</h3>
                 <div className=' mb-2'>
-                    {brandCat.description}
+                    {listing.description}
                 </div>
                 <h3 className="text-lg font-semibold mb-2 mt-4">Features</h3>
                 <div className='flex flex-row justify-between gap-3 pb-4 my-4'>
