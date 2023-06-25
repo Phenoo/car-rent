@@ -78,6 +78,7 @@ const ListingContainer:React.FC<ListingContainerProps> = ({
             toast.success("Listing reserved");
             setDateRange(initialDateRange);
             router.refresh();
+            router.push('/rentals')
         })
         .catch(() => {
             toast.error("Error, try again")
